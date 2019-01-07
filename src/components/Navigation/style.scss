@@ -1,0 +1,15 @@
+.pr-topnav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  &__logo {
+    & h1 {
+      margin: 0;
+    }
+  }
+  &__links {
+    & li {
+      display: inline;
+      margin-right: 20px;
+    }
+  }
+}
