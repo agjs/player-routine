@@ -1,0 +1,59 @@
+.pr-hero {
+  & h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  & p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 100px;
+    margin-top: 0;
+  }
+}
+
+.pr-wrapper {
+  width: 960px;
+  margin: auto;
+  margin-top: 100px;
+  &__features {
+    & .feature {
+      position: relative;
+      margin-bottom: 20px;
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__icon {
+          & svg {
+            font-size: 10rem;
+            margin-right: 20px;
+          }
+        }
+        &__content {
+          text-align: center;
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &--left {
+        .feature__wrapper {
+          grid-template-columns: 40% 60%;
+        }
+        .feature__wrapper__icon {
+          text-align: left;
+        }
+      }
+      &--right {
+        .feature__wrapper {
+          grid-template-columns: 60% 40%;
+        }
+        .feature__wrapper__icon {
+          text-align: right;
+          order: 1;
+        }
+      }
+    }
+  }
+}

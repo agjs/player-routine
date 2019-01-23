@@ -1,8 +1,8 @@
-import { LOGIN_SUCCESS } from "./actions";
+import { LOGIN_SUCCESS } from './actions';
 
 const defaultState = {
   isAuthenticated: false,
-  user: {}
+  user: null,
 };
 
 export default (state = defaultState, action) => {
